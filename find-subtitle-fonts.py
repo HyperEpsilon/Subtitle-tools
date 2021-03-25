@@ -23,14 +23,17 @@ def main():
 
 		episode_fonts = set()
 
+		# Font names are stored in the second element of the styles list
 		for m in style_matches:
 			episode_fonts.add(m.split(',')[1])
 		for m in embeded_matches:
 			episode_fonts.add(m)
 
+		# Add the episode title to the list for each font
 		for font in episode_fonts:
 			font_list[font].append(filename)
 
+		# Add all fonts to the master font list
 		fonts.update(episode_fonts)
 
 	with open('font_list.txt', 'w') as f:
@@ -38,6 +41,7 @@ def main():
 			f.write(f"{font}\n")
 		f.write("\n=============\n")
 
+		# Join each episode with a newline and 3 spaces
 		for font, eps in font_list.items():
 			joined_eps = '\n   '.join(sorted(eps))
 			f.write(f"{font}:  [{len(eps)}]\n   {joined_eps}\n")
