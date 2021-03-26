@@ -1,5 +1,5 @@
 ﻿$dest = 		"C:\Users\Alex\Videos\Anime\Vinland Saga\Season 1\"
-$mkvinputfile = "C:\Users\Alex\Videos\Anime\Attack on Titan\Season 4" +"\"+ "Attack on Titan - S04E10.mkv"
+$mkvinputfile = "D:\_temp\vinland" +"\"+ "[Judas] Vinland Saga S1 - 14.mkv"
 # Remove the double back ticks from the file names, it breaks it
 
 $path = Split-Path -Path $mkvinputfile

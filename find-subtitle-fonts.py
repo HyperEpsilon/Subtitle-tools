@@ -3,7 +3,7 @@ import os
 from collections import defaultdict
 
 sub_ext = ['.ass']
-dir_path = r"D:\Anime\Vinland Saga\Season 1\subs"
+dir_path = r"D:\_temp\vinland\subs"
 
 def main():
 	fonts = set()
